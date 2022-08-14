@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>China-U.S. Relations</title>
+<link rel="stylesheet" href="css/reset.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/liststyle.css">
+<link rel="stylesheet" href="css/cloudstyle.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/d3.v6.min.js"></script>
+<script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id='container_title'>
+    <p>China-U.S. Relations Visualization</p>
+  </div>
+
+  <div id='container_cloud'>
+		<svg id="svg_cloud"></svg>
+	</div>
+
+  <div id='container_stackedarea'>
+		<svg></svg>
+	</div>
+
+  <div class='container_tooltip'>
+    <h1>Timeline</h1>
+    <div class='slider-container'>
+      <div class='slider-turn'>
+      </div>
+    </div>
+    <div class='bottom'>
+      <button class='btnlst'>Last</button>
+      <div class='step'>
+        <span></span>
+      </div>
+      <button class='btn'>Next</button>
+    </div>
+  </div>
+
+<div class="wrapper">
+  <div class="container">
+    <input type="date" id="start_date" class="start_date" onchange="refreshthegraph()">
+    <div class="slider-wrapper">
+      <div id="slider-range"></div>
+      <div class="range-wrapper">
+        <div class="range"></div>
+        <div class="gear-wrapper">
+          <div class="gear-large gear-one">
+            <div class="gear-tooth"></div>
+            <div class="gear-tooth"></div>
+            <div class="gear-tooth"></div>
+            <div class="gear-tooth"></div>
+          </div>
+          <div class="gear-large gear-two">
+            <div class="gear-tooth"></div>
+            <div class="gear-tooth"></div>
+            <div class="gear-tooth"></div>
+            <div class="gear-tooth"></div>
+          </div>
+        </div>
+      </div>
+      <div class="marker marker-0">1940</div>
+      <div class="marker marker-25">1960</div>
+      <div class="marker marker-50">1980</div>
+      <div class="marker marker-75">2000</div>
+      <div class="marker marker-100">2020</div>
+    </div>
+    <input type="date" id="end_date" class="end_date" onchange="refreshthegraph()">
+  </div>
+</div>
+
+<div class="fav_list">
+  <div data-v-357a65ed="" class="fav_list_box">
+      <div  class="fav_list_title">
+          <h3 class="fav_list_title_h3">Relevant News</h3>
+      </div>
+      <div  class="my_fav_con">
+          <div>
+              <ul  class="my_fav_list", id="showlist">
+
+              </ul> <!---->
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="legend1"> </div>
+<div id="legend2"> </div>
+<div id="legend3"> </div>
+<div id="legend4"> </div>
+<div id="legend5"> </div>
+<div id="legend6"> </div>
+<div id="text1"> politics </div>
+<div id="text2"> economy </div>
+<div id="text3"> culture </div>
+<div id="text4"> military </div>
+<div id="text5"> sports </div>
+<div id="text6"> science </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script> 
+    <script src="js/index_tooltip.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/newlist.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/d3.layout.cloud.js"></script>
+    <script src="js/tf-idf.js"></script>
+    <script src="js/main_cloud.js"></script>
+<script  src="js/index.js"></script>
+</body>
+</html>
